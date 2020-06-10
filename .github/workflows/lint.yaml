@@ -22,14 +22,14 @@ jobs:
         
       # ESLint install
       - name: Install ESLint
-        run: npm install eslint #--save-dev
+        run: npm install eslint --save-dev
 
       # ESLint configure
-      - name: Configure ESLint
-        run: ./node_modules/.bin/eslint --init
+      #- name: Configure ESLint
+      #  run: ./node_modules/.bin/eslint --init
         
       - name: Run linters
-        uses: samuelmeuli/lint-action@v1
+        uses: Mr-Coxall/lint-action
         with:
           github_token: ${{ secrets.github_token }}
           # Enable linters
