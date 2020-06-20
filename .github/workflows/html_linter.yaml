@@ -30,4 +30,4 @@ jobs:
         
       # html-lint run
       - name: Run html-lint
-        run: htmllint **/*.html
+        run: htmllint **/*.html indent-width:2
