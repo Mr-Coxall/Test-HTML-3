@@ -24,6 +24,10 @@ jobs:
       - name: Install html lint
         run: npm install -g htmllint-cli
         
+      # html_lint config
+      - name: Config html lint
+        run: htmllint init
+        
       # html-lint run
       - name: Run html-lint
         run: htmllint **/*.html
