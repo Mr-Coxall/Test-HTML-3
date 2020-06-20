@@ -19,6 +19,9 @@ jobs:
       # html_lint install
       - name: Install html lint
         run: pip install html-linter
+        
+      # html-lint run
+        - name: Run html-lint
         run: html_lint.py **/*.html
         
       # ESLint and Prettier must be in `package.json`
