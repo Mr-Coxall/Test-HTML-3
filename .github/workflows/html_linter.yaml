@@ -1,3 +1,7 @@
+################################
+# Run HTML Linter against code base #
+################################
+
 name: HTML Linter
 
 on: push
